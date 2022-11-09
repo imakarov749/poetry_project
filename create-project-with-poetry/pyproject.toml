@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "create-project-with-poetry"
+version = "0.1.0"
+description = "test_poetry_project"
+authors = ["imak749"]
+readme = "README.md"
+packages = [{include = "create_project_with_poetry"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = "^7.2.0"
+selene = "^1.0.2"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.15.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
